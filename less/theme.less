@@ -292,7 +292,264 @@
 
 
 
+*{
+  outline:none !important;
+}
+body
+{
+  margin:0;
+  padding:0;
+  outline:none;
+  overflow-x:hidden ;
+  font-family: Brandon Grotesque;
+}
 
-body{
-  color:red;
+a
+{
+  color:#333;
+  text-decoration:none
+
+}
+a:hover,a:focus
+{
+  text-decoration:none;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style-type:none;
+}
+.collapse
+{
+  padding:0px;
+}
+.slider-area {
+  bottom: 0;
+  float: left;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: left 0.4s ease 0s,top 0.4s ease 0s;
+
+}
+.main-slider {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  background:#aaa;
+
+  img
+  {
+    width:100%;
+  }
+  .bx-controls-direction,.bx-controls-auto
+  {
+    &:extend(.hide);
+  }
+  .bx-viewport {
+    border: medium none;
+    box-shadow: 0 0 0;
+    left: 0;
+  }
+  .bx-pager {
+    bottom: 0;
+    display: table;
+    left: auto;
+    right: 0;
+    top: 38%;
+    width: 3% !important;
+    position:relative;
+
+    .bx-pager-item {
+      border-radius: 20px;
+      float: left;
+      margin: 0 21px 18px;
+      position: relative;
+      a {
+        border-radius: 20px;
+        height: 6px;
+        margin: 6px;
+        width: 6px;
+        background:#fff;
+        &.active::before {
+          border: 1px solid #fff;
+          border-radius: 20px;
+          bottom: 0;
+          content: "";
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        &:hover,.active
+        {
+          background: #fff none repeat scroll 0 0;
+        }
+      }
+    }
+  }
+  .bx-wrapper .bx-viewport {
+      background: #52504f none repeat scroll 0 0;
+  }
+}
+.bx-controls {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4%;
+  z-index: 9;
+}
+
+
+.main-content {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.top-info-box {
+  bottom: 70px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.top-info-box img {
+  max-width: 100%;
+}
+.top-info-box h1 {
+  color: #fff;
+  display: inline-block;
+  font-family: Brandon Grotesque;
+  font-size: 45px;
+  margin: 20px 0 25px;
+  width: 100%;
+  font-weight: 300;
+}
+
+.rel-box {
+  position: relative;
+  width: 100%;
+}
+.pattren {
+  background:url("../images/pattren-center.png") no-repeat scroll center 25px ,url("../images/pattren-left.png") no-repeat scroll left bottom ,url("../images/pattren-right.png") no-repeat scroll right top rgba(0, 0, 0, 0.1) ;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 1;
+
+}
+
+//@keyframes opacity-ani {
+//  0%   {opacity: 1}
+//  50%  {opacity: 0.3}
+//  100% {opacity: 1}
+//}
+
+
+.pattren::before {
+  border: 1px solid #444;
+  bottom:10px;
+  content: "";
+  left: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+
+.nav-bar {
+
+  background: #625d5a none repeat scroll 0 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+
+  .nav-toggle {
+    color: #fff;
+    float: right;
+    font-size: 18px;
+    padding: 5px 10px;
+    cursor: pointer;
+    &:extend(.noselect);
+    svg{
+      margin-left: 3px;
+      transform: translate(0px, 1px);
+    }
+
+  }
+  .spn {
+    color: #fff;
+    float: right;
+    font-size: 16px;
+    margin-right: 30px;
+    padding: 7px 10px;
+  }
+  .menu-bar{
+    display: none;
+    float: right;
+    li{
+      float: left;
+      margin-right: 8px;
+      a{
+        color: #fff;
+        display: inline-block;
+        font-size: 16px;
+        margin-right: 7px;
+        padding: 7px 10px;
+        text-transform: uppercase;
+        .transition(0.3s);
+
+        &:hover{
+          background:#000;
+        }
+      }
+    }
+  }
+}
+.sub-header
+{
+    background: transparent url("http://localhost:63342/zambezy/images/office.jpg") repeat scroll 0 0;
+    clear: both;
+    padding: 30px 0;
+    text-align: center;
+
+  span{
+    color: #c4482a;
+    display: inline-block;
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 1.6;
+    b{
+      font-weight: 500;
+    }
+    sup {
+      font-size: 16px;
+      font-weight: 600;
+      left: 3px;
+      top: -1.1em;
+    }
+  }
+}
+.work-info {
+  background: red none repeat scroll 0 0;
+  clear: both;
+  height: 150px;
+  width: 100%;
+  .left-img
+  {
+
+      background: blue url("../images/eye.png") repeat scroll 0 0;
+      height: 100%;
+      position: absolute;
+      width: 40%;
+
+  }
 }
