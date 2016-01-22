@@ -13,17 +13,25 @@
 				else{
 					$(".menu-bar").show();
 				}
-
 			});
 
 			var winwid = window.innerWidth;
 
 			$('.bxslider').bxSlider({
 				mode: 'fade',
-				auto: true,
-				autoControls: true,
+				auto: false,
+				autoControls: false,
 				pager:false
 			});
+
+			$('.markitslider').bxSlider({
+				minSlides: 1,
+				maxSlides: 3,
+				moveSlides:1,
+				slideWidth: 360,
+				slideMargin: 10
+			});
+
 
 
 			function myscrool(){
