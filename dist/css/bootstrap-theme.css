@@ -1053,6 +1053,59 @@ ul {
   left: 100%;
   position: absolute;
 }
+.hex-bg-wt {
+  background: #fff none repeat scroll 0 0;
+}
+.hex-bg-wt:before,
+.hex-bg-wt:after {
+  border-color: transparent #fff;
+}
+.hex-bg-wt img {
+  left: -30px;
+  position: absolute;
+  top: 46px;
+  width: 132px;
+  z-index: 21;
+}
+.hex-content-gray {
+  background: #7e7b7a none repeat scroll 0 0;
+}
+.hex-content-gray:before,
+.hex-content-gray:after {
+  border-color: transparent #7e7b7a;
+}
+.hex-content-gray i {
+  color: #dde1ea;
+  font-size: 70px;
+  height: 100%;
+  left: -50%;
+  padding: 30px 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 200%;
+  z-index: 21;
+}
+.hex-content-red span {
+  color: #fff;
+  font-size: 14px;
+  left: -20px;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  width: 110px;
+  z-index: 1;
+}
+.hex-content-red h5 {
+  color: #fff;
+  font-size: 29px;
+  left: -30px;
+  position: absolute;
+  text-align: center;
+  top: 54px;
+  width: 171px;
+  z-index: 1;
+}
 .hex-8 {
   height: 200px;
   width: 114px;
@@ -1062,6 +1115,30 @@ ul {
 }
 .hex-8:after {
   border-width: 100px 0 100px 60px;
+}
+.rotate-bx {
+  display: block;
+  height: 125px;
+  perspective: 100px;
+  width: 75px;
+  z-index: 99;
+}
+.rotate-bx div {
+  transition: all 1s ease 0s;
+  backface-visibility: hidden;
+  box-sizing: border-box;
+}
+.rotate-bx .rotate-bx-div1 {
+  transform: rotateY(0deg);
+}
+.rotate-bx .rotate-bx-div2 {
+  transform: rotateY(180deg);
+}
+.rotate-bx:hover .rotate-bx-div1 {
+  transform: rotateY(-180deg);
+}
+.rotate-bx:hover .rotate-bx-div2 {
+  transform: rotateY(0deg);
 }
 .markets {
   padding: 50px;
@@ -1257,6 +1334,10 @@ ul {
   background: #333132;
   padding: 20px 0;
 }
+.full_footer img {
+  opacity: 0.51;
+  width: 211px;
+}
 .full_footer ul {
   float: right;
 }
@@ -1266,35 +1347,96 @@ ul {
 }
 .full_footer ul li a {
   border-right: 1px solid #8a898a;
-  color: #8a898a;
+  color: #bab9ba;
   display: inline-block;
+  font-size: 16px;
+  line-height: 0.9;
   margin-top: 6px;
   padding: 0 20px;
+  text-transform: capitalize;
+}
+.full_footer ul li:last-child a {
+  border-right: 0;
 }
 .full_footer p {
   color: #8a898a;
   font-size: 13px;
-  margin-top: 20px;
+  margin: 30px 0;
 }
 .full_footer h4 {
-  color: #e7e1e1;
-  font-size: 18px;
-  margin-top: 20px;
+  color: #c7c1c1;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 19px 0 -6px;
 }
 .full_footer input {
-  margin: 7px 3px 20px;
-  padding: 10px 70px;
-  background: #e7e1e1;
-  border: none;
+  color: #e7e1e1;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 19px 0 3px;
+  padding: 7px;
+  width: 250px;
 }
 .full_footer button {
   background: #c34626 none repeat scroll 0 0;
   border: medium none;
+  color: #fff;
+  font-size: 19px;
+  margin-left: -3px;
   margin-top: 0;
-  padding: 8px 35px;
+  padding: 6px 27px;
+  transform: translate(0px, 1px);
 }
-.full_footer a {
-  color: #e7e1e1;
-  font-size: 20px;
+.full_footer .right {
+  float: right;
+}
+.full_footer .social-icons {
+  border-top: 1px solid #5a5a5a;
+  margin-top: 8px;
+  padding: 9px 0 0;
+  text-align: center;
+  width: 100%;
+}
+.full_footer .social-icons a {
+  background: #626061 none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  height: 19px;
+  margin: 13px 8px;
+  position: relative;
+  width: 38px;
+  text-align: center;
+}
+.full_footer .social-icons a i {
+  font-size: 22px;
+  margin-top: -1px;
+  z-index: 1;
+}
+.full_footer .social-icons a:hover {
+  background: #C34626;
+}
+.full_footer .social-icons a:hover:before,
+.full_footer .social-icons a:hover:after {
+  border-color: #C34626 transparent;
+}
+.full_footer .social-icons a:before {
+  border-color: #626061 transparent;
+  border-style: none solid solid;
+  border-width: 11px 19px;
+  bottom: 100%;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.full_footer .social-icons a:after {
+  border-color: #626061 transparent;
+  border-style: solid solid none;
+  border-width: 11px 19px;
+  top: 100%;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
 }
 /*# sourceMappingURL=bootstrap-theme.css.map */
