@@ -31,7 +31,10 @@
 				slideWidth: 360,
 				slideMargin: 10
 			});
-
+			$('.reviews-slider').bxSlider({
+				auto: true,
+				autoControls: true
+			});
 
 
 			function myscrool(){
