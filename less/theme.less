@@ -512,9 +512,9 @@ ul{
 .sub-header
 {
     background: transparent url("../images/office.jpg") repeat scroll 0 0;
-    clear: both;
     padding: 30px 0;
     text-align: center;
+    &:extend(.block);
 
   span{
     color: #c4482a;
@@ -961,11 +961,11 @@ ul{
   }
 }
 
-
 .our-story
 {
-  background: #c6c6c6  url("../images/children.jpg") repeat scroll center 0 / cover ;
+  background: transparent;
   padding: 40px 0;
+  min-height: 400px;
   .sty-item
   {
     display: flex;
@@ -1032,8 +1032,25 @@ ul{
 {
   &:extend(.block);
 
-  background: url("../images/pattren-left1t.png") no-repeat scroll left top  , #262014 url("../images/reviews-bg.jpg") no-repeat scroll 0 center / cover ;
+  background: transparent;
   padding: 30px 0;
+  min-height:400px;
+  position:relative;
+
+  &:after{
+    background: transparent url("../images/pattren-left1t.png") no-repeat scroll left top;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    animation-name: opacity-ani;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+  }
+
+
   .reviews-slide
   {
     padding: 60px 0 30px;
@@ -1131,6 +1148,8 @@ ul{
     }
   }
 }
+
+
 
 
 .full_footer

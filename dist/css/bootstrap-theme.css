@@ -9,6 +9,7 @@
   display: none;
 }
 .block,
+.sub-header,
 .accelerator .accelerator-item,
 .benefits .benefits-content,
 .markets .markets-content,
@@ -781,7 +782,6 @@ ul {
 }
 .sub-header {
   background: transparent url("../images/office.jpg") repeat scroll 0 0;
-  clear: both;
   padding: 30px 0;
   text-align: center;
 }
@@ -1170,8 +1170,9 @@ ul {
   padding-left: 20px;
 }
 .our-story {
-  background: #c6c6c6 url("../images/children.jpg") repeat scroll center 0 / cover;
+  background: transparent;
   padding: 40px 0;
+  min-height: 400px;
 }
 .our-story .sty-item {
   display: flex;
@@ -1226,8 +1227,21 @@ ul {
   background: transparent url("../images/pattren2.png") no-repeat scroll 0 bottom;
 }
 .reviews {
-  background: url("../images/pattren-left1t.png") no-repeat scroll left top, #262014 url("../images/reviews-bg.jpg") no-repeat scroll 0 center / cover;
+  background: transparent;
   padding: 30px 0;
+  min-height: 400px;
+  position: relative;
+}
+.reviews:after {
+  background: transparent url("../images/pattren-left1t.png") no-repeat scroll left top;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  animation-name: opacity-ani;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 .reviews .reviews-slide {
   padding: 60px 0 30px;

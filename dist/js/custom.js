@@ -5,6 +5,7 @@
 			$("body").show();
 
 
+
 			$(".nav-toggle").on("click",function(){
 				if($(".menu-bar").is(":visible"))
 				{
@@ -112,8 +113,10 @@
 
 			$(".imgs").ready(function(){
 				runcode();
+				$("body").cssAnimate();
 				setTimeout(function(){
-					runcode()
+					runcode();
+					$("body").cssAnimate();
 				}, 300);
 
 			});
