@@ -4,7 +4,14 @@
 
 			$("body").show();
 
-
+			if($("#opnewindow").length){
+				$("#opnewindow").click(function(){
+					$(".anim-box-lt").toggleClass("open");
+				});
+				$("#opnewindow1").click(function(){
+					$(".anim-box-rt").toggleClass("open");
+				});
+			}
 
 			$(".nav-toggle").on("click",function(){
 				if($(".menu-bar").is(":visible"))

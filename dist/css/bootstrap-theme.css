@@ -819,6 +819,7 @@ ul {
   align-self: center;
   display: inline-block;
   padding-left: 43%;
+  padding-right: 15px;
 }
 .work-info .work-info-content h3 {
   color: #c34627;
@@ -908,10 +909,10 @@ ul {
 }
 .acc-icon img,
 .our-story .sty-item span img {
-  left: 8px;
+  left: 18px;
   position: absolute;
-  top: -15px;
-  width: 95px;
+  top: -12px;
+  width: 73px;
   z-index: 8;
 }
 .benefits {
@@ -938,6 +939,7 @@ ul {
   height: 100%;
   position: absolute;
   width: 100%;
+  display: flex;
 }
 .shape-2 .rt-1 {
   left: 351px;
@@ -1095,16 +1097,55 @@ ul {
   top: 12px;
   width: 110px;
   z-index: 1;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .hex-content-red h5 {
   color: #fff;
-  font-size: 29px;
+  font-size: 32px;
   left: -30px;
   position: absolute;
   text-align: center;
-  top: 54px;
+  top: 60px;
   width: 171px;
   z-index: 1;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hex-8 {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.hex-8:before,
+.hex-8:after {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.hex-8:hover {
+  background: #7E7B7A none repeat scroll 0 0;
+}
+.hex-8:hover:before,
+.hex-8:hover:after {
+  border-color: transparent #7E7B7A;
 }
 .hex-8 {
   height: 200px;
@@ -1179,9 +1220,6 @@ ul {
   margin-bottom: 60px;
   width: 100%;
 }
-.our-story .sty-item span {
-  color: red;
-}
 .our-story .sty-item p {
   align-self: center;
   color: #fff;
@@ -1242,6 +1280,7 @@ ul {
   animation-name: opacity-ani;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  z-index: -1;
 }
 .reviews .reviews-slide {
   padding: 60px 0 30px;
@@ -1407,9 +1446,15 @@ ul {
 .full_footer .social-icons {
   border-top: 1px solid #5a5a5a;
   margin-top: 8px;
-  padding: 9px 0 0;
+  padding: 9px 0 40px;
   text-align: center;
   width: 100%;
+}
+.full_footer .social-icons img {
+  float: right;
+  opacity: 0.8;
+  position: absolute;
+  right: 15px;
 }
 .full_footer .social-icons a {
   background: #626061 none repeat scroll 0 0;
@@ -1433,24 +1478,533 @@ ul {
 .full_footer .social-icons a:hover:after {
   border-color: #C34626 transparent;
 }
-.full_footer .social-icons a:before {
+.full_footer .social-icons a:before,
+.full_footer .social-icons a:after {
   border-color: #626061 transparent;
-  border-style: none solid solid;
   border-width: 11px 19px;
   bottom: 100%;
   content: "";
-  left: 0;
   position: absolute;
   right: 0;
 }
-.full_footer .social-icons a:after {
-  border-color: #626061 transparent;
+.full_footer .social-icons a:before {
   border-style: solid solid none;
-  border-width: 11px 19px;
   top: 100%;
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
+}
+.full_footer .social-icons a:after {
+  border-style: none solid solid;
+  bottom: 100%;
+}
+.anim-box-lt {
+  opacity: 0;
+  transform: translate(-150px, 0px) scale(0.5);
+  -webkit-transform: translate(-150px, 0px) scale(0.5);
+  -moz-transform: translate(-150px, 0px) scale(0.5);
+  -ms-transform: translate(-150px, 0px) scale(0.5);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  -moz-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.anim-box-lt.open {
+  opacity: 1;
+  transform: translate(0px, 0px) scale(1);
+}
+.anim-box-rt {
+  opacity: 0;
+  transform: translate(450px, 0px) scale(0.5);
+  -webkit-transform: translate(450px, 0px) scale(0.5);
+  -moz-transform: translate(450px, 0px) scale(0.5);
+  -ms-transform: translate(450px, 0px) scale(0.5);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  -moz-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.anim-box-rt.open {
+  opacity: 1;
+  transform: translate(0px, 0px) scale(1);
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 0px) {
+  .nav-bar .menu-bar li a {
+    margin-right: 0px;
+  }
+  .markets .markets-content .ms-slide-item {
+    height: 255px;
+    margin: 0 -7px 20px;
+  }
+  .benefits .benefits-content .left,
+  .benefits .benefits-content .right {
+    height: 370px;
+    width: 100%;
+  }
+  .shape-1,
+  .shape-2 {
+    right: -84px;
+    top: -40px;
+  }
+  .shape-2 {
+    right: -100px;
+    top: 0;
+  }
+  .full_footer input {
+    width: 216px;
+  }
+  .full_footer ul li a {
+    padding: 0 17px;
+  }
+  .acc-bg {
+    background-size: 150px auto;
+  }
+  .accelerator,
+  .markets {
+    padding: 30px 0;
+  }
+  .sharepoint .acc-img img {
+    max-width: 100%;
+  }
+  .queryform {
+    background-size: 140px auto;
+  }
+  .work-info {
+    height: 390px;
+  }
+  .reviews .reviews-slide img {
+    width: 380px;
+  }
+  .queryform form button {
+    font-size: 24px;
+  }
+  .top-info-box img {
+    width: 350px;
+  }
+  .top-info-box h1 {
+    font-size: 30px;
+  }
+  .sub-header span {
+    font-size: 21px;
+    font-weight: 500;
+  }
+  .work-info .work-info-content p {
+    font-size: 15px;
+  }
+  .work-info .work-info-content h3 {
+    font-size: 25px;
+  }
+  .head2 {
+    font-size: 38px;
+  }
+  .sharepoint .acc-info h3 {
+    margin-top: 0px;
+    font-size: 32px;
+  }
+  .sharepoint .acc-info p {
+    font-size: 20px;
+  }
+  .head2.blk {
+    font-size: 32px;
+  }
+  .sharepoint .acc-info,
+  .sharepoint .acc-img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 582px) and (max-width: 767px) {
+  .shape-2 {
+    right: 0;
+    top: 0;
+  }
+  .shape-1,
+  .shape-2,
+  .shape-2 {
+    right: 0px;
+    top: -40px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .markets .markets-content .ms-slide-item {
+    height: auto;
+  }
+  .our-story .sty-item p {
+    font-size: 19px;
+    width: 66%;
+  }
+  .top-info-box {
+    bottom: 7px;
+  }
+  .work-info .left-img {
+    display: none;
+  }
+  .work-info .work-info-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
+  .work-info .work-info-content p {
+    font-size: 17px;
+  }
+  .head2.blk {
+    font-size: 25px;
+  }
+  .full_footer img {
+    display: table;
+    margin: 0 auto 20px;
+  }
+  .full_footer .right {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .full_footer .social-icons img {
+    top: 20px;
+  }
+  .work-info {
+    height: auto;
+  }
+  .nav-bar .menu-bar {
+    background: #4a4a4a none repeat scroll 0 0;
+    box-shadow: 0 2px 5px #333;
+    display: none;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 37px;
+    width: 150px;
+  }
+  .nav-bar .menu-bar li {
+    width: 100%;
+  }
+  .nav-bar .menu-bar li a {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 582px) {
+  .top-info-box img {
+    width: 250px;
+  }
+  .top-info-box h1 {
+    font-size: 23px;
+  }
+  .queryform form {
+    padding: 20px 0;
+  }
+  .queryform {
+    background: none;
+  }
+  .shape-1,
+  .shape-2 {
+    right: auto;
+    top: -20px;
+  }
+  .shape-2 {
+    right: auto;
+    top: 0px;
+  }
+  .shape-1,
+  .shape-2,
+  .shape-2 {
+    left: 50%;
+    margin-left: -162px;
+    max-width: 330px;
+  }
+  .rt-8 {
+    left: 120px;
+    top: 0;
+    transform: scale(0.7);
+  }
+  .benefits .benefits-content .left,
+  .benefits .benefits-content .right {
+    height: 500px;
+  }
+  .anim-box-lt,
+  .anim-box-rt {
+    margin-top: 110px;
+  }
+  .anim-box-lt {
+    transform: translate(0px, 0px) scale(0.82) !important;
+    opacity: 1;
+  }
+  .anim-box-rt {
+    opacity: 1;
+    transform: translate(-157px, 0px) scale(0.82) !important;
+  }
+  .shape-2 .rt-8 {
+    left: 122px;
+  }
+  .benefits {
+    padding: 50px 0 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  .head2 {
+    font-size: 26px !important;
+  }
+  .head2 span {
+    font-size: 26px;
+  }
+  .head2 {
+    background-size: 314px auto;
+    font-size: 38px;
+  }
+  .acc-icon,
+  .our-story .sty-item span,
+  .our-story .sty-item span {
+    display: table;
+    float: none;
+    margin: 15px auto 60px;
+  }
+  .accelerator .accelerator-item h4,
+  .accelerator .accelerator-item p {
+    font-size: 25px;
+    text-align: center;
+  }
+  .markets .markets-content {
+    margin: 40px 0 0;
+  }
+  .our-story .sty-item {
+    display: inline-block;
+  }
+  .our-story .sty-item p {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .reviews .reviews-slide img {
+    width: 80%;
+  }
+  .reviews .reviews-slide p {
+    font-size: 20px;
+  }
+  .queryform form button {
+    font-size: 17px;
+    padding: 10px 30px;
+  }
+  .full_footer input {
+    width: 186px;
+  }
+  .full_footer button {
+    padding: 6px 16px;
+  }
+  .full_footer .social-icons {
+    text-align: left;
+  }
+  .top-info-box img {
+    display: none;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .nav-bar .menu-bar li a {
+    margin-right: 7px;
+  }
+  .sharepoint .acc-info {
+    width: 60%;
+  }
+  .sharepoint .acc-img {
+    width: 40%;
+  }
+  .markets .markets-content .ms-slide-item {
+    height: 375px;
+    margin: 0 -7px;
+  }
+  .benefits .benefits-content .left,
+  .benefits .benefits-content .right {
+    height: 310px;
+    width: 100%;
+  }
+  .shape-1,
+  .shape-2 {
+    right: -24px;
+    top: -60px;
+  }
+  .shape-2 {
+    right: -370px;
+    top: -50px;
+  }
+  .full_footer input {
+    width: 246px;
+  }
+  .acc-bg {
+    background-size: 150px auto;
+  }
+  .accelerator,
+  .markets {
+    padding: 30px 0;
+  }
+  .sharepoint .acc-img img {
+    max-width: 100%;
+  }
+  .queryform {
+    background-size: 140px auto;
+  }
+  .work-info {
+    height: 390px;
+  }
+  .reviews .reviews-slide img {
+    width: 380px;
+  }
+  .queryform form button {
+    font-size: 24px;
+  }
+  .top-info-box img {
+    width: 430px;
+  }
+  .top-info-box h1 {
+    font-size: 38px;
+  }
+  .sub-header span {
+    font-size: 27px;
+    font-weight: 400;
+  }
+  .work-info .work-info-content p {
+    font-size: 17px;
+  }
+  .work-info .work-info-content h3 {
+    font-size: 30px;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .benefits .benefits-content .left,
+  .benefits .benefits-content .right {
+    height: 420px;
+    width: 50%;
+  }
+  .shape-1,
+  .shape-2,
+  .shape-2 {
+    right: auto;
+    top: auto;
+  }
+  .full_footer input {
+    width: 250px;
+  }
+  .full_footer ul li a {
+    padding: 0 20px;
+  }
+  .acc-bg {
+    background-size: 270px auto;
+  }
+  .accelerator,
+  .markets {
+    padding: 50px;
+  }
+  .sharepoint .acc-img img {
+    max-width: 100%;
+  }
+  .queryform {
+    background-size: 190px auto;
+  }
+  .work-info {
+    height: 450px;
+  }
+  .reviews .reviews-slide img {
+    width: 500px;
+  }
+  .queryform form button {
+    font-size: 24px;
+  }
+  .sub-header span {
+    font-size: 27px;
+  }
+  .work-info .work-info-content p {
+    font-size: 19px;
+  }
+  .work-info .work-info-content h3 {
+    font-size: 32px;
+  }
+}
+@media (min-width: 1400px) {
+  .top-info-box h1 {
+    font-size: 45px;
+  }
+  .top-info-box img {
+    width: 640px;
+  }
+  .sharepoint .acc-img img {
+    max-width: 110%;
+  }
+  .queryform {
+    background-size: 230px auto;
+  }
+  .work-info {
+    height: 500px;
+  }
+  .reviews .reviews-slide img {
+    width: 500px;
+  }
+  .queryform form button {
+    font-size: 24px;
+  }
+  .sub-header span {
+    font-size: 33px;
+  }
+  .work-info .work-info-content p {
+    font-size: 23px;
+  }
+  .work-info .work-info-content h3 {
+    font-size: 37px;
+  }
+  .head2 {
+    font-size: 45px;
+  }
+  .sharepoint .acc-info h3 {
+    margin-top: 20px;
+    font-size: 38px;
+  }
+  .sharepoint .acc-info p {
+    font-size: 22px;
+  }
+  .head2.blk {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1500px) {
+  .sharepoint .acc-img img {
+    max-width: 120%;
+  }
+  .queryform {
+    background-size: 300px auto;
+  }
+  .work-info {
+    height: 532px;
+  }
+  .reviews .reviews-slide img {
+    width: 560px;
+  }
+  .queryform form button {
+    font-size: 27px;
+  }
+}
+@media (min-width: 1600px) {
+  .sharepoint .acc-img img {
+    max-width: 130%;
+  }
+  .queryform {
+    background-size: 320px auto;
+  }
+  .work-info {
+    height: 612px;
+  }
+  .reviews .reviews-slide img {
+    width: 640px;
+  }
+  .queryform form button {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1900px) {
+  .sharepoint .acc-img img {
+    max-width: 150%;
+  }
+  .queryform {
+    background-size: 380px auto;
+  }
 }
 /*# sourceMappingURL=bootstrap-theme.css.map */
