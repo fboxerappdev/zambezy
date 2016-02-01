@@ -781,7 +781,7 @@ ul {
   background: #000;
 }
 .sub-header {
-  background: transparent url("../images/office.jpg") repeat scroll 0 0;
+  background: transparent url("../images/pattrentop.jpg") repeat scroll 0 0;
   padding: 30px 0;
   text-align: center;
 }
@@ -835,12 +835,10 @@ ul {
   font-weight: 500;
 }
 .head2 {
-  background: transparent url("../images/header.png") no-repeat scroll center bottom;
   color: #c34627;
   font-size: 45px;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 40px;
-  padding-bottom: 30px;
   text-align: center;
 }
 .head2 span {
@@ -855,14 +853,97 @@ ul {
   padding-bottom: 52px;
 }
 .head_2 {
-  background: transparent url("../images/header.png") no-repeat scroll center bottom;
   color: #fff;
   font-family: arial;
   font-size: 38px;
   font-weight: bold;
   margin-bottom: 40px;
-  padding-bottom: 30px;
   text-align: center;
+}
+.flip-icon-animate,
+.accelerator .accelerator-item .flip-icon,
+.our-story .sty-item .flip-icon {
+  float: left;
+  height: 127px;
+  position: relative;
+  width: 132px;
+  display: block;
+  perspective: 180px;
+  z-index: 99;
+}
+.flip-icon-animate span,
+.accelerator .accelerator-item .flip-icon span,
+.our-story .sty-item .flip-icon span {
+  transition: all 1s ease 0s;
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  background: #C04A2E none repeat scroll 0 0;
+  height: 55px;
+  margin: 35px 21px 35px 0;
+  position: absolute;
+  width: 110px;
+}
+.flip-icon-animate span:after,
+.accelerator .accelerator-item .flip-icon span:after,
+.our-story .sty-item .flip-icon span:after {
+  border-color: #C04A2E transparent;
+  border-style: solid;
+  border-width: 35px 55px 0;
+  bottom: -35px;
+  content: "";
+  position: absolute;
+}
+.flip-icon-animate span:before,
+.accelerator .accelerator-item .flip-icon span:before,
+.our-story .sty-item .flip-icon span:before {
+  border-color: #C04A2E transparent;
+  border-style: solid;
+  border-width: 0 55px 35px;
+  content: "";
+  position: absolute;
+  top: -35px;
+}
+.flip-icon-animate span.gray,
+.accelerator .accelerator-item .flip-icon span.gray,
+.our-story .sty-item .flip-icon span.gray {
+  background: #7e7b7a none repeat scroll 0 0;
+}
+.flip-icon-animate span.gray:after,
+.flip-icon-animate span.gray:before,
+.accelerator .accelerator-item .flip-icon span.gray:after,
+.accelerator .accelerator-item .flip-icon span.gray:before,
+.our-story .sty-item .flip-icon span.gray:after,
+.our-story .sty-item .flip-icon span.gray:before {
+  border-color: #7e7b7a transparent;
+}
+.flip-icon-animate span img,
+.accelerator .accelerator-item .flip-icon span img,
+.our-story .sty-item .flip-icon span img {
+  left: 18px;
+  position: absolute;
+  top: -12px;
+  width: 73px;
+  z-index: 8;
+}
+.flip-icon-animate .rotate-bx-div1,
+.accelerator .accelerator-item .flip-icon .rotate-bx-div1,
+.our-story .sty-item .flip-icon .rotate-bx-div1 {
+  transform: rotateY(0deg);
+}
+.flip-icon-animate .rotate-bx-div2,
+.accelerator .accelerator-item .flip-icon .rotate-bx-div2,
+.our-story .sty-item .flip-icon .rotate-bx-div2 {
+  transform: rotateY(180deg);
+}
+.flip-icon-animate:hover .rotate-bx-div1,
+.accelerator .accelerator-item .flip-icon:hover .rotate-bx-div1,
+.our-story .sty-item .flip-icon:hover .rotate-bx-div1 {
+  transform: rotateY(-180deg);
+}
+.flip-icon-animate:hover .rotate-bx-div2,
+.accelerator .accelerator-item .flip-icon:hover .rotate-bx-div2,
+.our-story .sty-item .flip-icon:hover .rotate-bx-div2 {
+  transform: rotateY(0deg);
 }
 .accelerator {
   box-shadow: 0 0 213px -29px #e0e0e0 inset;
@@ -879,41 +960,6 @@ ul {
 .accelerator .accelerator-item p {
   color: #5a5a5a;
   font-size: 17px;
-}
-.acc-icon,
-.our-story .sty-item span {
-  background: #C04A2E none repeat scroll 0 0;
-  float: left;
-  height: 55px;
-  margin: 35px 21px 35px 0;
-  position: relative;
-  width: 110px;
-}
-.acc-icon:after,
-.our-story .sty-item span:after {
-  border-color: #C04A2E transparent;
-  border-style: solid;
-  border-width: 35px 55px 0;
-  bottom: -35px;
-  content: "";
-  position: absolute;
-}
-.acc-icon:before,
-.our-story .sty-item span:before {
-  border-color: #C04A2E transparent;
-  border-style: solid;
-  border-width: 0 55px 35px;
-  content: "";
-  position: absolute;
-  top: -35px;
-}
-.acc-icon img,
-.our-story .sty-item span img {
-  left: 18px;
-  position: absolute;
-  top: -12px;
-  width: 73px;
-  z-index: 8;
 }
 .benefits {
   background: url("../images/pattren-right.png") no-repeat scroll right top, url("../images/pattren-left.png") no-repeat scroll left bottom, #fff url("../images/light.jpg") no-repeat scroll right bottom;
@@ -1141,11 +1187,11 @@ ul {
   transition: all 0.3s ease 0s;
 }
 .hex-8:hover {
-  background: #7E7B7A none repeat scroll 0 0;
+  background: #404040 none repeat scroll 0 0;
 }
 .hex-8:hover:before,
 .hex-8:hover:after {
-  border-color: transparent #7E7B7A;
+  border-color: transparent #404040;
 }
 .hex-8 {
   height: 200px;
@@ -1189,11 +1235,24 @@ ul {
   margin: 40px 0;
 }
 .markets .markets-content .ms-slide-item {
-  background: #404040 url("../images/pattren.png") no-repeat scroll 0 0;
+  background: #404040 none no-repeat scroll 0 0;
   height: 375px;
   margin: 0 -7px;
-  background-size: 100% auto;
   padding: 20px;
+}
+.markets .markets-content .ms-slide-item:before {
+  background: transparent url("../images/pattren.png") no-repeat scroll 0 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 1;
+  animation-name: opacity-ani;
+  background-size: 100% auto;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 .markets .markets-content .ms-slide-item h4 {
   color: #fff;
@@ -1752,13 +1811,6 @@ ul {
     background-size: 314px auto;
     font-size: 38px;
   }
-  .acc-icon,
-  .our-story .sty-item span,
-  .our-story .sty-item span {
-    display: table;
-    float: none;
-    margin: 15px auto 60px;
-  }
   .accelerator .accelerator-item h4,
   .accelerator .accelerator-item p {
     font-size: 25px;
@@ -1774,6 +1826,13 @@ ul {
     margin: 0;
     text-align: center;
     width: 100%;
+  }
+  .flip-icon-animate,
+  .accelerator .accelerator-item .flip-icon,
+  .our-story .sty-item .flip-icon {
+    display: table;
+    float: none;
+    margin: 0 auto;
   }
   .reviews .reviews-slide img {
     width: 80%;

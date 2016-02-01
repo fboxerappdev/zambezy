@@ -509,7 +509,9 @@ ul{
 }
 .sub-header
 {
-    background: transparent url("../images/office.jpg") repeat scroll 0 0;
+    background: transparent url("../images/pattrentop.jpg") repeat scroll 0 0;
+    padding: 30px 0;
+    text-align: center;
     padding: 30px 0;
     text-align: center;
     &:extend(.block);
@@ -569,12 +571,10 @@ ul{
   }
 }
 .head2 {
-  background: transparent url("../images/header.png") no-repeat scroll center bottom;
   color: #c34627;
   font-size: 45px;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 40px;
-  padding-bottom: 30px;
   text-align: center;
   span{
     font-weight: 500;
@@ -592,25 +592,101 @@ ul{
 
 
 .head_2 {
-  background: transparent url("../images/header.png") no-repeat scroll center bottom;
   color: #fff;
   font-family: arial;
   font-size: 38px;
   font-weight: bold;
   margin-bottom: 40px;
-  padding-bottom: 30px;
   text-align: center;
 }
+
+
+
+.flip-icon-animate {
+  float: left;
+  height: 127px;
+  position: relative;
+  width: 132px;
+  display: block;
+  perspective: 180px;
+  z-index: 99;
+  span{
+    transition: all 1s ease 0s;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    background: #C04A2E none repeat scroll 0 0;
+    height: 55px;
+    margin: 35px 21px 35px 0;
+    position: absolute;
+    width: 110px;
+    &:after{
+      border-color: #C04A2E transparent;
+      border-style: solid;
+      border-width: 35px 55px 0;
+      bottom: -35px;
+      content: "";
+      position: absolute;
+    }
+    &:before{
+      border-color: #C04A2E transparent;
+      border-style: solid;
+      border-width: 0 55px 35px;
+      content: "";
+      position: absolute;
+      top: -35px;
+    }
+
+    &.gray{
+      background: #7e7b7a none repeat scroll 0 0;
+
+      &:after,&:before {
+        border-color: #7e7b7a transparent;
+      }
+    }
+
+    img{
+      left: 18px;
+      position: absolute;
+      top: -12px;
+      width: 73px;
+      z-index: 8;
+    }
+  }
+  .rotate-bx-div1
+  {
+    transform: rotateY(0deg);
+  }
+  .rotate-bx-div2
+  {
+    transform: rotateY(180deg);
+  }
+  &:hover{
+    .rotate-bx-div1
+    {
+      transform: rotateY(-180deg);
+    }
+    .rotate-bx-div2
+    {
+      transform: rotateY(0deg);
+    }
+  }
+}
+
+
+
+
 
 .accelerator {
   box-shadow: 0 0 213px -29px #e0e0e0 inset;
   padding: 50px;
   .accelerator-item
   {
-
     margin-bottom: 50px;
-    &:extend(.block);
 
+    &:extend(.block);
+    .flip-icon{
+      &:extend(.flip-icon-animate all);
+    }
     h4{
       color: #414141;
       font-size: 28px;
@@ -622,38 +698,7 @@ ul{
     }
   }
 }
-.acc-icon
-{
-  background: #C04A2E none repeat scroll 0 0;
-  float: left;
-  height: 55px;
-  margin: 35px 21px 35px 0;
-  position: relative;
-  width: 110px;
-  &:after{
-    border-color: #C04A2E transparent;
-    border-style: solid;
-    border-width: 35px 55px 0;
-    bottom: -35px;
-    content: "";
-    position: absolute;
-  }
-  &:before{
-    border-color: #C04A2E transparent;
-    border-style: solid;
-    border-width: 0 55px 35px;
-    content: "";
-    position: absolute;
-    top: -35px;
-  }
-  img{
-    left: 18px;
-    position: absolute;
-    top: -12px;
-    width: 73px;
-    z-index: 8;
-  }
-}
+
 
 .benefits
 {
@@ -805,6 +850,8 @@ ul{
 {
   &:extend(.hex-0 all);
 }
+
+
 .hex-bg-wt {
   background: #fff none repeat scroll 0 0;
   &:before,&:after{
@@ -874,9 +921,9 @@ ul{
     .transition(0.3s);
   }
   &:hover{
-    background: #7E7B7A none repeat scroll 0 0;
+    background: #404040 none repeat scroll 0 0;
     &:before,&:after{
-       border-color:transparent #7E7B7A;
+       border-color:transparent #404040;
      }
   }
 }
@@ -952,11 +999,25 @@ ul{
     margin: 40px 0;
     .ms-slide-item
     {
-      background: #404040 url("../images/pattren.png") no-repeat scroll 0 0;
+      background: #404040 none no-repeat scroll 0 0;
       height: 375px;
       margin: 0 -7px;
-      background-size:100% auto;
       padding: 20px;
+      &:before{
+        background: transparent url("../images/pattren.png") no-repeat scroll 0 0;
+        content:"";
+        position:absolute;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        opacity:1;
+        animation-name: opacity-ani;
+        background-size:100% auto;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+
       h4{
         color: #fff;
         font-family: arial;
@@ -987,9 +1048,11 @@ ul{
     display: flex;
     margin-bottom: 60px;
     width: 100%;
-    span{
-    &:extend(.acc-icon all);
+
+    .flip-icon{
+      &:extend(.flip-icon-animate all);
     }
+
     p{
       align-self: center;
       color: #fff;
@@ -1537,11 +1600,7 @@ ul{
     background-size: 314px auto;
     font-size: 38px;
   }
-  .acc-icon, .our-story .sty-item span {
-   display: table;
-    float: none;
-    margin: 15px auto 60px;
-  }
+
   .accelerator .accelerator-item h4,.accelerator .accelerator-item p {
     font-size: 25px;
     text-align: center;
@@ -1556,6 +1615,11 @@ ul{
     margin: 0;
     text-align: center;
     width: 100%;
+  }
+  .flip-icon-animate{
+    display: table;
+    float: none;
+    margin: 0 auto;
   }
   .reviews .reviews-slide img {
     width: 80%;
