@@ -810,7 +810,7 @@ ul {
   width: 100%;
 }
 .work-info .left-img {
-  background: transparent url("../images/eye.png") no-repeat scroll right center / cover;
+  background: transparent url("../images/eye.jpg") no-repeat scroll right center / cover;
   height: 100%;
   position: absolute;
   width: 40%;
@@ -921,9 +921,19 @@ ul {
 .our-story .sty-item .flip-icon span img {
   left: 18px;
   position: absolute;
-  top: -12px;
+  top: -10px;
   width: 73px;
   z-index: 8;
+}
+.flip-icon-animate span i,
+.accelerator .accelerator-item .flip-icon span i,
+.our-story .sty-item .flip-icon span i {
+  color: #fff;
+  font-size: 70px;
+  left: 20px;
+  position: absolute;
+  top: -14px;
+  z-index: 9;
 }
 .flip-icon-animate .rotate-bx-div1,
 .accelerator .accelerator-item .flip-icon .rotate-bx-div1,
