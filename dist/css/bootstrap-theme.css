@@ -785,17 +785,20 @@ ul {
   padding: 30px 0;
   text-align: center;
 }
-.sub-header span {
+.sub-header span,
+.sub-header p {
   color: #c4482a;
   display: inline-block;
   font-size: 33px;
   font-weight: 400;
   line-height: 1.6;
 }
-.sub-header span b {
+.sub-header span b,
+.sub-header p b {
   font-weight: 500;
 }
-.sub-header span sup {
+.sub-header span sup,
+.sub-header p sup {
   font-size: 16px;
   font-weight: 600;
   left: 3px;
@@ -863,59 +866,32 @@ ul {
 .flip-icon-animate,
 .accelerator .accelerator-item .flip-icon,
 .our-story .sty-item .flip-icon {
-  float: left;
-  height: 127px;
-  position: relative;
-  width: 132px;
   display: block;
-  perspective: 180px;
-  z-index: 99;
+  float: left;
+  height: 137px;
   margin-right: 16px;
+  perspective: 180px;
+  position: relative;
+  width: 145px;
+  z-index: 99;
 }
 .flip-icon-animate span,
 .accelerator .accelerator-item .flip-icon span,
 .our-story .sty-item .flip-icon span {
-  transition: all 1s ease 0s;
   backface-visibility: hidden;
+  background: transparent url("../images/HexagonTest.png") no-repeat scroll 0 0 / auto 100%;
   box-sizing: border-box;
-  background: #C04A2E none repeat scroll 0 0;
-  height: 106px;
-  margin: 10px 16px 17px 33px;
+  height: 120px;
+  margin: 9px 0;
   position: absolute;
-  width: 60px;
-}
-.flip-icon-animate span:after,
-.accelerator .accelerator-item .flip-icon span:after,
-.our-story .sty-item .flip-icon span:after {
-  border-color: transparent #C04A2E;
-  border-style: solid;
-  border-width: 53px 0 53px 35px;
-  left: 100%;
-  content: "";
-  position: absolute;
-}
-.flip-icon-animate span:before,
-.accelerator .accelerator-item .flip-icon span:before,
-.our-story .sty-item .flip-icon span:before {
-  border-color: transparent #C04A2E;
-  border-style: solid;
-  border-width: 53px 35px 53px 0;
-  content: "";
-  position: absolute;
-  right: 100%;
+  text-align: center;
+  transition: all 1s ease 0s;
+  width: 141px;
 }
 .flip-icon-animate span.gray,
 .accelerator .accelerator-item .flip-icon span.gray,
 .our-story .sty-item .flip-icon span.gray {
-  background: #7e7b7a none repeat scroll 0 0;
-}
-.flip-icon-animate span.gray:after,
-.flip-icon-animate span.gray:before,
-.accelerator .accelerator-item .flip-icon span.gray:after,
-.accelerator .accelerator-item .flip-icon span.gray:before,
-.our-story .sty-item .flip-icon span.gray:after,
-.our-story .sty-item .flip-icon span.gray:before {
-  border-color: transparent #7e7b7a;
+  background: transparent url("../images/Hexagonbrown.png") no-repeat scroll 0 0 / auto 100%;
 }
 .flip-icon-animate span img,
 .accelerator .accelerator-item .flip-icon span img,
@@ -931,10 +907,7 @@ ul {
 .our-story .sty-item .flip-icon span i {
   color: #fff;
   font-size: 70px;
-  left: -7px;
-  position: absolute;
-  top: 16px;
-  z-index: 9;
+  margin: 24px 0;
 }
 .flip-icon-animate .rotate-bx-div1,
 .accelerator .accelerator-item .flip-icon .rotate-bx-div1,
@@ -999,28 +972,28 @@ ul {
   display: flex;
 }
 .shape-2 .rt-1 {
-  left: 351px;
+  left: 312px;
 }
 .shape-2 .rt-2 {
-  left: 238px;
+  left: 199px;
 }
 .shape-2 .rt-3 {
-  left: 351px;
+  left: 312px;
 }
 .shape-2 .rt-4 {
-  left: 464px;
+  left: 425px;
 }
 .shape-2 .rt-5 {
-  left: 464px;
+  left: 425px;
 }
 .shape-2 .rt-6 {
-  left: 351px;
+  left: 312px;
 }
 .shape-2 .rt-7 {
-  left: 238px;
+  left: 199px;
 }
 .shape-2 .rt-8 {
-  left: 62px;
+  left: 0px;
 }
 .rt-0,
 .rt-1,
@@ -1035,35 +1008,35 @@ ul {
   position: absolute;
 }
 .rt-1 {
-  left: 161px;
+  left: 123px;
   top: 156px;
 }
 .rt-2 {
-  left: 48px;
+  left: 11px;
   top: 92px;
 }
 .rt-3 {
-  left: 161px;
+  left: 124px;
   top: 28px;
 }
 .rt-4 {
-  left: 274px;
+  left: 237px;
   top: 92px;
 }
 .rt-5 {
-  left: 274px;
+  left: 237px;
   top: 220px;
 }
 .rt-6 {
-  left: 161px;
+  left: 124px;
   top: 284px;
 }
 .rt-7 {
-  left: 48px;
+  left: 11px;
   top: 220px;
 }
 .rt-8 {
-  left: 410px;
+  left: 350px;
   top: 119px;
 }
 .hex-0,
@@ -1075,85 +1048,34 @@ ul {
 .hex-6,
 .hex-7,
 .hex-8 {
-  background: #C04A2E none repeat scroll 0 0;
+  background: transparent url("../images/HexagonTest.png") no-repeat scroll 0 0 / 100% auto;
   height: 126px;
+  padding: 8px 19px;
   position: absolute;
-  width: 74px;
-}
-.hex-0:before,
-.hex-1:before,
-.hex-2:before,
-.hex-3:before,
-.hex-4:before,
-.hex-5:before,
-.hex-6:before,
-.hex-7:before,
-.hex-8:before {
-  border-color: transparent #C04A2E;
-  border-style: solid;
-  border-width: 63px 37px 63px 0;
-  content: "";
-  position: absolute;
-  right: 100%;
-}
-.hex-0:after,
-.hex-1:after,
-.hex-2:after,
-.hex-3:after,
-.hex-4:after,
-.hex-5:after,
-.hex-6:after,
-.hex-7:after,
-.hex-8:after {
-  border-color: transparent #C04A2E;
-  border-style: solid;
-  border-width: 63px 0 63px 37px;
-  content: "";
-  left: 100%;
-  position: absolute;
+  text-align: center;
+  width: 147px;
 }
 .hex-bg-wt {
   background: #fff none repeat scroll 0 0;
 }
-.hex-bg-wt:before,
-.hex-bg-wt:after {
-  border-color: transparent #fff;
-}
 .hex-bg-wt img {
-  left: -30px;
+  left: 7px;
   position: absolute;
   top: 46px;
   width: 132px;
   z-index: 21;
 }
 .hex-content-gray {
-  background: #7e7b7a none repeat scroll 0 0;
-}
-.hex-content-gray:before,
-.hex-content-gray:after {
-  border-color: transparent #7e7b7a;
+  background: transparent url("../images/HexagonBrown.png") no-repeat scroll 0 0 / 100% auto;
 }
 .hex-content-gray i {
   color: #dde1ea;
   font-size: 70px;
-  height: 100%;
-  left: -50%;
-  padding: 30px 0;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  width: 200%;
-  z-index: 21;
+  padding: 20px 0;
 }
 .hex-content-red span {
   color: #fff;
   font-size: 14px;
-  left: -20px;
-  position: absolute;
-  text-align: center;
-  top: 12px;
-  width: 110px;
-  z-index: 1;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -1163,13 +1085,9 @@ ul {
 }
 .hex-content-red h5 {
   color: #fff;
-  font-size: 32px;
-  left: -30px;
-  position: absolute;
+  font-size: 30px;
+  margin: 70px 0;
   text-align: center;
-  top: 60px;
-  width: 171px;
-  z-index: 1;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -1187,38 +1105,19 @@ ul {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
-.hex-8:before,
-.hex-8:after {
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  -moz-transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
 .hex-8:hover {
-  background: #404040 none repeat scroll 0 0;
-}
-.hex-8:hover:before,
-.hex-8:hover:after {
-  border-color: transparent #404040;
+  background: transparent url("../images/HexagonTest.png") no-repeat scroll 0 0 / 100% auto;
 }
 .hex-8 {
   height: 200px;
-  width: 114px;
-}
-.hex-8:before {
-  border-width: 100px 60px 100px 0;
-}
-.hex-8:after {
-  border-width: 100px 0 100px 60px;
+  text-align: center;
+  width: 233px;
 }
 .rotate-bx {
   display: block;
   height: 125px;
-  perspective: 100px;
-  width: 75px;
+  perspective: 170px;
+  width: 147px;
   z-index: 99;
 }
 .rotate-bx div {
@@ -1314,7 +1213,7 @@ ul {
 }
 .sharepoint .acc-info h3 {
   color: #c04a2e;
-  font-size: 38px;
+  font-size: 38p  x;
   font-weight: 600;
 }
 .sharepoint .acc-info p {
@@ -1662,7 +1561,8 @@ ul {
   .top-info-box h1 {
     font-size: 30px;
   }
-  .sub-header span {
+  .sub-header span,
+  .sub-header p {
     font-size: 21px;
     font-weight: 500;
   }
@@ -1788,7 +1688,7 @@ ul {
     max-width: 330px;
   }
   .rt-8 {
-    left: 120px;
+    left: 80px;
     top: 0;
     transform: scale(0.7);
   }
@@ -1809,7 +1709,7 @@ ul {
     transform: translate(-157px, 0px) scale(0.82) !important;
   }
   .shape-2 .rt-8 {
-    left: 122px;
+    left: 80px;
   }
   .benefits {
     padding: 50px 0 0;
@@ -1932,7 +1832,8 @@ ul {
   .top-info-box h1 {
     font-size: 38px;
   }
-  .sub-header span {
+  .sub-header span,
+  .sub-header p {
     font-size: 27px;
     font-weight: 400;
   }
@@ -1984,7 +1885,8 @@ ul {
   .queryform form button {
     font-size: 24px;
   }
-  .sub-header span {
+  .sub-header span,
+  .sub-header p {
     font-size: 27px;
   }
   .work-info .work-info-content p {
@@ -2016,7 +1918,8 @@ ul {
   .queryform form button {
     font-size: 24px;
   }
-  .sub-header span {
+  .sub-header span,
+  .sub-header p {
     font-size: 33px;
   }
   .work-info .work-info-content p {

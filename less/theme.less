@@ -516,7 +516,7 @@ ul{
     text-align: center;
     &:extend(.block);
 
-  span{
+  span,p{
     color: #c4482a;
     display: inline-block;
     font-size: 33px;
@@ -603,46 +603,26 @@ ul{
 
 
 .flip-icon-animate {
-  float: left;
-  height: 127px;
-  position: relative;
-  width: 132px;
   display: block;
-  perspective: 180px;
-  z-index: 99;
+  float: left;
+  height: 137px;
   margin-right: 16px;
+  perspective: 180px;
+  position: relative;
+  width: 145px;
+  z-index: 99;
   span{
-    transition: all 1s ease 0s;
     backface-visibility: hidden;
+    background: transparent url("../images/HexagonTest.png") no-repeat scroll 0 0 / auto 100%;
     box-sizing: border-box;
-    background: #C04A2E none repeat scroll 0 0;
-    height: 106px;
-    margin: 10px 16px 17px 33px;
+    height: 120px;
+    margin: 9px 0;
     position: absolute;
-    width: 60px;
-    &:after{
-      border-color: transparent #C04A2E;
-      border-style: solid;
-      border-width:53px 0 53px 35px;
-      left: 100%;
-      content: "";
-      position: absolute;
-    }
-    &:before{
-      border-color: transparent #C04A2E;
-      border-style: solid;
-      border-width:53px 35px 53px 0;
-      content: "";
-      position: absolute;
-      right: 100%;
-    }
-
+    text-align: center;
+    transition: all 1s ease 0s;
+    width: 141px;
     &.gray{
-      background: #7e7b7a none repeat scroll 0 0;
-
-      &:after,&:before {
-        border-color: transparent #7e7b7a;
-      }
+      background: transparent url("../images/Hexagonbrown.png") no-repeat scroll 0 0 / auto 100%;
     }
 
     img{
@@ -655,11 +635,9 @@ ul{
     i{
       color: #fff;
       font-size: 70px;
-      left: -7px;
-      position: absolute;
-      top: 16px;
-      z-index: 9;
+      margin: 24px 0;
     }
+
   }
   .rotate-bx-div1
   {
@@ -711,7 +689,6 @@ ul{
 
 .benefits
 {
-
   background: url("../images/pattren-right.png") no-repeat scroll right top, url("../images/pattren-left.png") no-repeat scroll left bottom, #fff url("../images/light.jpg") no-repeat scroll right bottom;
   padding: 50px 0 120px;
   .benefits-content
@@ -747,35 +724,35 @@ ul{
 
   .rt-1
   {
-    left: 351px;
+    left: 312px;
   }
   .rt-2
   {
-    left: 238px;
+    left: 199px;
   }
   .rt-3
   {
-    left: 351px;
+    left: 312px;
   }
   .rt-4
   {
-    left: 464px;
+    left: 425px;
   }
   .rt-5
   {
-    left: 464px;
+    left: 425px;
   }
   .rt-6
   {
-    left: 351px;
+    left: 312px;
   }
   .rt-7
   {
-    left: 238px;
+    left: 199px;
   }
   .rt-8
   {
-    left: 62px;
+    left: 0px;
   }
 }
 .rt-0
@@ -786,74 +763,60 @@ ul{
 .rt-1
 {
   &:extend(.rt-0);
-  left: 161px;
+  left: 123px;
   top: 156px;
 }
 .rt-2
 {
   &:extend(.rt-0);
-  left: 48px;
+  left: 11px;
   top: 92px;
 }
 .rt-3
 {
   &:extend(.rt-0);
-  left: 161px;
+  left: 124px;
   top: 28px;
 }
 .rt-4
 {
   &:extend(.rt-0);
-  left: 274px;
+  left: 237px;
   top: 92px;
 }
 .rt-5
 {
   &:extend(.rt-0);
-  left: 274px;
+  left: 237px;
   top: 220px;
 }
 .rt-6
 {
   &:extend(.rt-0);
-  left: 161px;
+  left:124px;
   top: 284px;
 }
 .rt-7
 {
   &:extend(.rt-0 all);
-  left: 48px;
+  left: 11px;
   top: 220px;
 }
 .rt-8
 {
   &:extend(.rt-0 all);
-  left: 410px;
+  left: 350px;
   top: 119px;
 }
 
 .hex-0
 {
-  background: #C04A2E none repeat scroll 0 0;
+  background: transparent url("../images/HexagonTest.png") no-repeat scroll 0 0 / 100% auto;
   height: 126px;
+  padding: 8px 19px;
   position: absolute;
-  width: 74px;
-  &:before{
-    border-color: transparent #C04A2E;
-    border-style: solid;
-    border-width: 63px 37px 63px 0;
-    content: "";
-    position: absolute;
-    right: 100%;
-  }
-  &:after{
-    border-color: transparent #C04A2E;
-    border-style: solid;
-    border-width: 63px 0 63px 37px;
-    content: "";
-    left: 100%;
-    position: absolute;
-  }
+  text-align: center;
+  width: 147px;
 }
 .hex-1,.hex-2,.hex-3,.hex-4,.hex-5,.hex-6,.hex-7,.hex-8
 {
@@ -863,11 +826,8 @@ ul{
 
 .hex-bg-wt {
   background: #fff none repeat scroll 0 0;
-  &:before,&:after{
-    border-color: transparent #fff;
-  }
   img{
-    left: -30px;
+    left: 7px;
     position: absolute;
     top: 46px;
     width: 132px;
@@ -878,21 +838,11 @@ ul{
 
 .hex-content-gray
 {
-  background: #7e7b7a none repeat scroll 0 0;
-  &:before,&:after{
-    border-color: transparent #7e7b7a;
-  }
+  background: transparent url("../images/HexagonBrown.png") no-repeat scroll 0 0 / 100% auto;
   i{
     color: #dde1ea;
     font-size: 70px;
-    height: 100%;
-    left: -50%;
-    padding: 30px 0;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    width: 200%;
-    z-index: 21;
+    padding: 20px 0;
   }
 }
 
@@ -903,51 +853,29 @@ ul{
   span{
     color: #fff;
     font-size: 14px;
-    left: -20px;
-    position: absolute;
-    text-align: center;
-    top: 12px;
-    width: 110px;
-    z-index: 1;
     .noselect;
   }
   h5{
     color: #fff;
-    font-size: 32px;
-    left: -30px;
-    position: absolute;
+    font-size: 30px;
+    margin: 70px 0;
     text-align: center;
-    top: 60px;
-    width: 171px;
-    z-index: 1;
     .noselect;
   }
 }
 .hex-8{
   cursor:pointer;
   .transition(0.3s);
-  &:before,&:after{
-    .transition(0.3s);
-  }
   &:hover{
-    background: #404040 none repeat scroll 0 0;
-    &:before,&:after{
-       border-color:transparent #404040;
-     }
+    background: transparent url("../images/HexagonTest.png") no-repeat scroll 0 0 / 100% auto;
   }
 }
 
 
 .hex-8{
   height: 200px;
-  width: 114px;
-  &:before{
-    border-width: 100px 60px 100px 0;
-  }
-  &:after{
-
-    border-width: 100px 0 100px 60px;
-  }
+  text-align: center;
+  width: 233px;
 }
 
 
@@ -957,8 +885,8 @@ ul{
 {
   display: block;
   height: 125px;
-  perspective: 100px;
-  width: 75px;
+  perspective: 170px;
+  width: 147px;
   z-index: 99;
 
   div{
@@ -1086,11 +1014,11 @@ ul{
   margin-top: 24px;
   .acc-info
   {
-      width:60%;
+    width:60%;
     float:left;
     h3{
       color: #c04a2e;
-      font-size: 38px;
+      font-size: 38p  x;
       font-weight: 600;
     }
     p{
@@ -1449,7 +1377,7 @@ ul{
   .top-info-box h1 {
     font-size: 30px;
   }
-  .sub-header span {
+  .sub-header span,.sub-header p {
     font-size: 21px;
     font-weight: 500;
   }
@@ -1574,7 +1502,7 @@ ul{
     max-width: 330px;
   }
   .rt-8 {
-    left: 120px;
+    left: 80px;
     top: 0;
     transform: scale(0.7);
   }
@@ -1594,7 +1522,7 @@ ul{
     transform: translate(-157px, 0px) scale(0.82) !important;
   }
   .shape-2 .rt-8 {
-    left: 122px;
+    left: 80px;
   }
   .benefits {
     padding: 50px 0 0;
@@ -1715,7 +1643,7 @@ ul{
   .top-info-box h1 {
     font-size: 38px;
   }
-  .sub-header span {
+  .sub-header span,.sub-header p {
     font-size: 27px;
     font-weight: 400;
   }
@@ -1768,7 +1696,7 @@ ul{
     font-size:24px;
   }
 
-  .sub-header span {
+  .sub-header span,.sub-header p {
     font-size: 27px;
   }
   .work-info .work-info-content p {
@@ -1801,7 +1729,7 @@ ul{
   .queryform form button {
     font-size:24px;
   }
-  .sub-header span {
+  .sub-header span,.sub-header p {
     font-size: 33px;
   }
   .work-info .work-info-content p {
